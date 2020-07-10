@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Author: YHQ
  * @Date: 2020/7/9 18:17
  */
+
 @SpringBootApplication
 @MapperScan("com.yhq.userCenter.dao")
 public class UserApplication {
