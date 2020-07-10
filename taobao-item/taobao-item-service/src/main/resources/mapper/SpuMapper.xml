@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.SpuMapper">
+    <select id="selectSpu" resultType="spu">
+        select id,title,sub_title subTitle,cid1,cid2,cid3,brand_id brandId,saleable,valid,create_time createTime,last_update_time lastUpdateTime  from tb_spu
+        <where>
+            <if test="saleable!=null">
+                and saleable=#{saleable}
+            </if>
+            <if test="key!=null and key!=''">
+                and title like concat('%',#{key},'%')
+            </if>
+        </where>
+
+    </select>
+    <!--<insert id="insertSpec" parameterType="specGroup">-->
+        <!--<selectKey resultType="int" keyColumn="id" keyProperty="id" order="AFTER">-->
+            <!--select last_insert_id()-->
+        <!--</selectKey>-->
+        <!--insert into tb_spec_group (name,cid) values (#{name},#{cid})-->
+    <!--</insert>-->
+    <insert id="insertSelective" parameterType="spuBo">
+        <selectKey resultType="long" keyColumn="id" keyProperty="id" order="AFTER">
+        select last_insert_id()
+        </selectKey>
+        insert into tb_spu
+        (title,sub_title,cid1,cid2,cid3,brand_id,saleable,valid,create_time,last_update_time)
+        values (#{title},#{subTitle},#{cid1},#{cid2},#{cid3},#{brandId},#{saleable},#{valid},#{createTime},#{lastUpdateTime})
+    </insert>
+</mapper>

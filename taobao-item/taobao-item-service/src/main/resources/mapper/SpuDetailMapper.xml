@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.SpuDetailMapper">
+    <insert id="insertSelective" parameterType="spuDetail">
+        insert into tb_spu_detail
+        (spu_id,description,generic_spec,special_spec,packing_list,after_service)
+        values
+        (#{spuId},#{description},#{genericSpec},#{specialSpec},#{packingList},#{afterService})
+    </insert>
+</mapper>

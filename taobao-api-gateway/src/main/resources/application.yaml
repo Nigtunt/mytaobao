@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: taobao-api-gateway
+server:
+  port: 10010
+eureka:
+  client:
+    service-url:
+      'defaultZone': http://localhost:10000/eureka/
+    registry-fetch-interval-seconds: 5
+zuul:
+#  # routes配置会自动完成简写形式
+#  routes:
+#    xxx: # route名
+#      # 默认去除前缀consumer
+#      path: /consumer/**
+#      #      url: http://localhost:8003
+#      serviceId: EUREKA-CONSUMER
+  prefix: /api
+  retryable: true
+  routes:
+    item-service: /item/**
+#    upload-service: /upload/**    api.taobao.com/api/upload/upload/image
+    upload-service:
+      path: /upload/**
+      serviceId: upload-service
+      stripPrefix: false   # 不去除前缀
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+ribbon:
+  ConnectTimeout: 250 # 连接超时时间(ms)
+  ReadTimeout: 2000 # 通信超时时间(ms)
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 1 # 同一实例的重试次数
+logging:
+  level:
+    root: info

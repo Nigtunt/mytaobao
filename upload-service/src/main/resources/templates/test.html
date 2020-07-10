@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="_csrf" th:content="${_csrf.token}">
+    <meta name="_csrf_header" th:content="${_csrf.headerName}">
+
+    <title>Title</title>
+    <script src="https://lib.baomitu.com/vue/2.6.11/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="file" ref="fileInt" >
+    <button @click="upload">upload</button>
+    <img :src="image"><br>
+    <input type="file" ref="fileInt2" multiple>
+    <button @click="uploads">upload</button>
+    <div v-for="im in images">
+        <img :src="im" alt="">
+    </div>
+</div>
+
+<script type="text/javascript">
+    new Vue({
+        el:"#app",
+        data:{
+            image: '123',
+            images: []
+        },
+        methods: {
+            upload(){
+                const file = this.$refs.fileInt.files[0];
+                console.log(document.getElementsByName("_csrf")[0]);
+                const token = document.getElementsByName("_csrf")[0].attributes['th:content'].value
+                const header = document.getElementsByName("_csrf_header")[0].attributes['th:content'].value
+                console.log(header);
+                const data = new FormData();
+                data.append('file', file);
+                axios.post('/upload/image', data, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                        'X-CSRF-TOKEN': token
+                    },
+                }).then(res => {
+                    console.log(res);
+                    this.image = res.data
+                }).catch(err => {
+                    console.log(err);
+                });
+            },
+            uploads(){
+                const files = this.$refs.fileInt2.files;
+                console.log(document.getElementsByName("_csrf")[0]);
+                const token = document.getElementsByName("_csrf")[0].attributes['th:content'].value
+                const header = document.getElementsByName("_csrf_header")[0].attributes['th:content'].value
+
+                const data = new FormData();
+                for (let i = 0;i < files.length;i++) {
+                    data.append('files', files[i])
+                }
+                axios.post('/upload/images', data, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                        'X-CSRF-TOKEN': token
+                    },
+                }).then(res => {
+                    console.log(res);
+                    this.images = res.data
+                }).catch(err => {
+                    console.log(err);
+                });
+            }
+        }
+    })
+</script>
+</body>
+</html>

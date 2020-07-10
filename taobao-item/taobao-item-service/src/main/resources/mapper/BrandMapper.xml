@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.BrandMapper">
+    <select id="queryBrandByPage" resultType="brand">
+        select * from tb_brand
+        <where>
+            <if test="key!=null and key.length!=''">
+                name like CONCAT('%',#{key},'%')
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteBrandByIds" parameterType="java.lang.Long">
+        delete from tb_brand where id in
+        <foreach collection="ids" separator="," open="(" close=")" item="id">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <insert id="saveBrand" parameterType="brand">
+        <selectKey resultType="int" keyColumn="id" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into tb_brand (name,image,letter) values (#{name},#{image},#{letter});
+    </insert>
+
+    <insert id="addBrandCategory" >
+        insert into tb_category_brand values
+        <foreach collection="cids" item="cid" separator=",">
+            (#{cid},#{bid})
+        </foreach>
+    </insert>
+    <select id="queryBrandById" parameterType="long" resultType="brand">
+        select * from tb_brand where id=#{id}
+    </select>
+    <select id="queryBrandCategory" parameterType="long" resultType="java.util.Map">
+        select id,name from tb_category where id in
+          (select category_id from tb_category_brand where brand_id=#{id})
+    </select>
+    <update id="updateBrand" parameterType="brand">
+        update tb_brand
+        <set>
+            <if test="name!=null and name!=''">
+                name=#{name},
+            </if>
+            <if test="image!=null and image!=''">
+                image=#{image},
+            </if>
+            <if test="letter!=null and letter!=''">
+                letter=#{letter},
+            </if>
+        </set> where id=#{id}
+    </update>
+
+    <select id="queryBrandByCid" parameterType="java.lang.Long" resultType="brand">
+        select * from tb_brand a
+        left join tb_category_brand b on a.id=b.brand_id
+        where b.category_id=#{cid}
+    </select>
+</mapper>

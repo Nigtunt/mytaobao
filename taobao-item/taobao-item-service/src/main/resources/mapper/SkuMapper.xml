@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.SkuMapper">
+    <insert id="insertSelective" parameterType="sku">
+        <selectKey resultType="long" keyColumn="id" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into tb_sku
+        (spu_id,title,images,price,indexes,own_spec,enable,create_time,last_update_time)
+        values (#{spuId},#{title},#{images},#{price},#{indexes},#{ownSpec},#{enable},#{createTime},#{lastUpdateTime})
+    </insert>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.SpecGroupMapper">
+    <select id="querySpecGroups" resultType="specGroup">
+        select * from tb_spec_group where cid=#{cid}
+    </select>
+    <update id="update" parameterType="specGroup">
+        update tb_spec_group set name=#{name} where id=#{id}
+    </update>
+    <insert id="insertSpec" parameterType="specGroup">
+        <selectKey resultType="long" keyColumn="id" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into tb_spec_group (name,cid) values (#{name},#{cid})
+    </insert>
+    <delete id="deleteSpec" parameterType="long">
+        delete from tb_spec_group where id=#{id}
+    </delete>
+</mapper>

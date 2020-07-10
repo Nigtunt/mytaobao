@@ -1,0 +1,27 @@
+
+spring:
+  elasticsearch:
+    rest:
+      uris: "http://localhost:9200"
+  datasource:
+    url: jdbc:mysql://localhost:3306/yun
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: search-service
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: "tb_"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+    registry-fetch-interval-seconds: 5
+server:
+  port: 9999

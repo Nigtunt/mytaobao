@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: item-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/yun
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:10000/eureka/
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.yhq.entity
+
+pagehelper:
+  offsetAsPageNum: true
+  rowBoundsWithCount: true
+  pageSizeZero: true
+  reasonable: true
+logging:
+  level:
+    com.yhq.dao: debug

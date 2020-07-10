@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: item-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/cms
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      password: 123

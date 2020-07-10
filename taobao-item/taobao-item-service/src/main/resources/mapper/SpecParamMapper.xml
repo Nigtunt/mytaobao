@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.SpecParamMapper">
+    <select id="list" resultType="specParam" parameterType="long">
+        select * from tb_spec_param where group_id=#{gid}
+    </select>
+    <insert id="insert" parameterType="specParam">
+        <selectKey resultType="long" keyColumn="id" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into tb_spec_param (cid,group_id,name,`numeric`,unit,generic,searching,segments)
+        values (#{cid},#{group_id},#{name},#{numeric},#{unit},#{generic},#{searching},#{segments})
+    </insert>
+    <update id="update" parameterType="specParam">
+        update tb_spec_param
+        <set>
+            <if test="name!=null and name!=''">
+                name=#{name},
+            </if>
+            <if test="segments!=null and segments!=''">
+                segments=#{segments},
+            </if>
+            <if test="true">
+                `numeric`=#{numeric},
+            </if>
+            <if test="unit!=null and unit!=''">
+                unit=#{unit},
+            </if>
+            <if test="true">
+                generic=#{generic},
+            </if>
+            <if test="true">
+                searching=#{searching},
+            </if>
+        </set> where id=#{id}
+    </update>
+    <delete id="deleteById" parameterType="long">
+        delete from tb_spec_param where id=#{id}
+    </delete>
+    <select id="querySpecParamByCid" resultType="specParam" parameterType="long">
+        select * from tb_spec_param where cid=#{cid}
+    </select>
+</mapper>

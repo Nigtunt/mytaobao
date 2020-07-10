@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yhq.dao.StockMapper">
+    <insert id="insertSelective" parameterType="stock">
+        insert into tb_stock
+        (sku_id,seckill_stock,seckill_total,stock)
+        values (#{skuId},#{seckillStock},#{seckillTotal},#{stock})
+    </insert>
+</mapper>
