@@ -1,6 +1,20 @@
 <?xml version="1.0"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yhq.dao.SpuMapper">
+    <!--cache标签内属性：-->
+    <!--eviction：定义缓存移除机制（算法），默认为LRU（最近最少使用），它会清除最少使用的数据，还有一种FIFO（先进先出），它会清除最先进来的数据。-->
+    <!--flushInterval：定义缓存刷新周期，单位为毫秒。-->
+    <!--size：标识缓存cache中容纳的最大元素，默认为1024。-->
+    <!--readOnly：默认为false，可配置为true缓存只读。-->
+    <!--xml写法-->
+    <cache type="com.yhq.config.RedisCache">
+        <property name="eviction" value="LRU" />
+        <property name="flushInterval" value="6000000" />
+        <property name="size" value="1024" />
+        <property name="readOnly" value="false" />
+    </cache>
+
+
     <select id="selectSpu" resultType="spu">
         select id,title,sub_title subTitle,cid1,cid2,cid3,brand_id brandId,saleable,valid,create_time createTime,last_update_time lastUpdateTime  from tb_spu
         <where>

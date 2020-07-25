@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.File;
@@ -54,8 +55,5 @@ public class test {
         System.out.println(path);
     }
 
-    @Test
-    public void test(){
-        System.out.println(StringUtils.substringAfterLast("QQ浏览器截图20181227193304.png","."));
-    }
+
 }

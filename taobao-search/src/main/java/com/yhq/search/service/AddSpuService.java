@@ -45,6 +45,21 @@ public class AddSpuService {
         IndexResponse response = client.index(request, RequestOptions.DEFAULT);
         System.out.println(response.toString());
     }
+    /**
+     * 添加商品
+     * @param searchSpuString
+     * @throws IOException
+     */
+    public void AddSpu(String searchSpuString) throws IOException {
+        IndexRequest request = new IndexRequest("taobao_item_spu","_doc");
+
+        request.source(searchSpuString, XContentType.JSON);
+        request.timeout(TimeValue.timeValueSeconds(1));
+        request.timeout("1s");
+
+        IndexResponse response = client.index(request, RequestOptions.DEFAULT);
+        System.out.println(response.toString());
+    }
 
     /**
      * 添加多个商品

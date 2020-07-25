@@ -38,12 +38,17 @@ public class GoodsService {
     @Resource
     private BrandMapper brandMapper;
 
+    @Resource
+    private SearchInfoSenderService searchInfoSenderService;
+
+    // 分页查询 spu商品
     public PageResultVo<Spu> querySpuByPage(int page,int rows, Boolean saleable,String key){
         PageHelper.startPage(page,rows);
 
         Page<Spu> pageInfo = (Page<Spu>)spuMapper.selectSpu(saleable,key);
 
         List<Spu> collect = pageInfo.getResult().stream().peek(spu -> {
+            // 将三级分类查出来
             List<String> strings = categoryMapper.queryCategoryByIds(
                     Arrays.asList(spu.getCid1(), spu.getCid2(), spu.getCid3())
             );
@@ -54,6 +59,7 @@ public class GoodsService {
         }).collect(Collectors.toList());
         return new PageResultVo<>(pageInfo.getTotal(),collect);
     }
+    // 保存商品
     @Transactional
     public void saveGoods(SpuBo spuBo) {
         spuBo.setCreateTime(new Date());
@@ -62,22 +68,28 @@ public class GoodsService {
         spuBo.setSaleable(true);
         //添加spu
         spuMapper.insertSelective(spuBo);
+        // 插入获取主键id，然后设置 spudetail 中的 spuid
         spuBo.getSpuDetail().setSpuId(spuBo.getId());
+
         //添加spudetail
         spuDetailMapper.insertSelective(spuBo.getSpuDetail());
-        //sku
+        // sku有多个，循环插入
         spuBo.getSkus().forEach((e)->{
             e.setCreateTime(spuBo.getCreateTime());
             e.setLastUpdateTime(e.getCreateTime());
             e.setSpuId(spuBo.getId());
             skuMapper.insertSelective(e);
 
+            // 插入库存
             Stock stock = new Stock();
             stock.setStock(e.getStock());
             stock.setSkuId(e.getId());
 
             stockMapper.insertSelective(stock);
         });
+        // 向搜索服务发送信息
+        searchInfoSenderService.sendSearchInfo(spuBo);
+
         //添加stock
 
     }

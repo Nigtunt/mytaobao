@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<#if error??>
+    <div><font color="red">${error}</font></div>
+<#else>
+        <#list ims as im>
+            <div>
+                <img src="${im.thumb}">
+                <p>${im.title}</p>
+                <a href="/cangku/item/${im.id}">click</a>
+            </div>
+        </#list>
+</#if>
+</body>
+</html>

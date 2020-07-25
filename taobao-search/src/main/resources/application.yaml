@@ -13,6 +13,16 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
     name: search-service
+  rabbitmq:
+    host: 192.168.0.106
+    port: 5672
+    username: user
+    password: 123
+    virtual-host: /vhost_yhq
+    listener:
+      direct:
+        prefetch: 0
+        acknowledge-mode: manual
 mybatis-plus:
   global-config:
     db-config:

@@ -12,9 +12,11 @@ import java.util.List;
 /**
  * @Author: YHQ
  * @Date: 2020/7/8 21:04
+ *
+ *  调用 搜索服务
  */
-@RestController
-@RequestMapping("test")
+//@RestController
+//@RequestMapping("test")
 public class SearchController {
     @Autowired
     RestTemplate restTemplate;

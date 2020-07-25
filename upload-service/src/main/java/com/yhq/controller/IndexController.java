@@ -15,4 +15,14 @@ public class IndexController {
     public String index(){
         return "test";
     }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    @RequestMapping("/set")
+    public String set(){
+        return "set";
+    }
 }

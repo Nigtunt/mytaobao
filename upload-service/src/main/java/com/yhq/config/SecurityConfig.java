@@ -28,6 +28,7 @@ import java.io.PrintWriter;
  * @Author: YHQ
  * @Date: 2020/6/24 16:52
  */
+@Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     PasswordEncoder passwordEncoder() {
@@ -36,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
+        web.ignoring().mvcMatchers("/css/**","/js/**","/fonts/**","/images/**");
     }
 
     @Override
@@ -45,14 +47,45 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginProcessingUrl("/doLogin")
+                .successForwardUrl("/")
+//                .successHandler(new AuthenticationSuccessHandler() {
+//                    @Override
+//                    public void onAuthenticationSuccess(HttpServletRequest req, HttpServletResponse resp, Authentication authentication) throws IOException, ServletException {
+//                        RespBean ok = RespBean.ok("登录成功！",authentication.getPrincipal());
+//                        resp.setContentType("application/json;charset=utf-8");
+//                        PrintWriter out = resp.getWriter();
+//                        out.write(new ObjectMapper().writeValueAsString(ok));
+//                        out.flush();
+//                        out.close();
+//                    }
+//                })
+                .failureHandler(new AuthenticationFailureHandler() {
+                    @Override
+                    public void onAuthenticationFailure(HttpServletRequest req, HttpServletResponse resp, AuthenticationException e) throws IOException, ServletException {
+                        RespBean error = RespBean.error("登录失败");
+                        resp.setContentType("application/json;charset=utf-8");
+                        PrintWriter out = resp.getWriter();
+                        out.write(new ObjectMapper().writeValueAsString(error));
+                        out.flush();
+                        out.close();
+                    }
+                })
                 .loginPage("/login")
                 .permitAll()
                 .and()
                 .logout()
                 .logoutUrl("/logout")
-                .permitAll()
-                .and();
-        http.csrf().disable();
-
+                .logoutSuccessHandler(new LogoutSuccessHandler() {
+                    @Override
+                    public void onLogoutSuccess(HttpServletRequest req, HttpServletResponse resp, Authentication authentication) throws IOException, ServletException {
+                        RespBean ok = RespBean.ok("注销成功！");
+                        resp.setContentType("application/json;charset=utf-8");
+                        PrintWriter out = resp.getWriter();
+                        out.write(new ObjectMapper().writeValueAsString(ok));
+                        out.flush();
+                        out.close();
+                    }
+                })
+                .permitAll();
     }
 }

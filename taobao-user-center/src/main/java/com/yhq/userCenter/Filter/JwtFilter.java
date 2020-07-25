@@ -35,7 +35,7 @@ public class JwtFilter extends GenericFilterBean {
             Claims claims = Jwts
                     .parser()
                     // 私钥
-                    .setSigningKey("sang@123")
+                    .setSigningKey("javaboy")
                     //剔除 Bearer
                     .parseClaimsJws(jwtToken.replace("Bearer", ""))
                     .getBody();

@@ -9,6 +9,19 @@ spring:
       maximum-pool-size: 30
       minimum-idle: 10
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 123.56.106.111
+    port: 39222
+#  rabbitmq:
+#      host: 192.168.0.106
+#      port: 5672
+#      username: user
+#      password: 123
+#      virtual-host: /vhost_yhq
+#      listener:
+#        direct:
+#          prefetch: 0
+#          acknowledge-mode: manual
 server:
   port: 8080
 #eureka:
@@ -18,12 +31,18 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   typeAliasesPackage: com.yhq.entity
-
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
 pagehelper:
   offsetAsPageNum: true
   rowBoundsWithCount: true
   pageSizeZero: true
   reasonable: true
-logging:
-  level:
-    com.yhq.dao: debug
+#logging:
+#  level:
+#    com.yhq.dao: debug
+
+
+

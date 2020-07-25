@@ -12,23 +12,17 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
-import org.springframework.security.web.AuthenticationEntryPoint;
-import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
@@ -41,7 +35,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     UserAuthService service;
     @Bean
     PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        return new BCryptPasswordEncoder();
     }
     //定义权限，与角色继承
     @Bean
@@ -57,11 +51,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // 内存中
         auth.inMemoryAuthentication()
                 .withUser("admin")
-                .password("123").roles("admin")
+                .password(passwordEncoder().encode("123")).roles("admin")
                 .and()
                 .withUser("sang")
-                .password("456")
-                .roles("User");
+                .password(passwordEncoder().encode("456"))
+                .roles("user");
         // 从数据库加载
         auth.userDetailsService(service).passwordEncoder(passwordEncoder());
     }
@@ -79,18 +73,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 // 这种走过滤链 但设置可以匿名访问
-                .antMatchers("/chart").permitAll()
-                .antMatchers("/hello").hasRole("User")
-                .antMatchers("/admin").hasRole("admin")
-                .antMatchers(HttpMethod.POST, "/login")
-                .permitAll()
-                .antMatchers(HttpMethod.POST, "/register")
-                .permitAll()
+//                .antMatchers("/chart").permitAll()
+//                .antMatchers("/hello").hasRole("user")
+//                .antMatchers("/admin").hasRole("admin")
+//                .antMatchers(HttpMethod.POST, "/login")
+//                .permitAll()
+//                .antMatchers(HttpMethod.POST, "/register")
+//                .permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .addFilterBefore(new JwtLoginFilter("/login",authenticationManager())
-                        , UsernamePasswordAuthenticationFilter.class)
-                .addFilterBefore(new JwtFilter(),UsernamePasswordAuthenticationFilter.class)
+//                .addFilterBefore(new JwtLoginFilter("/login",authenticationManager())
+//                        , UsernamePasswordAuthenticationFilter.class)
+//                .addFilterBefore(new JwtFilter(), UsernamePasswordAuthenticationFilter.class)
                 .csrf().disable().exceptionHandling()
                 // 权限不足是触发
                 .authenticationEntryPoint((httpServletRequest, httpServletResponse, e) -> {
@@ -112,6 +106,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     out.flush();
                     out.close();
                 });
+    }
+    @Override
+    @Bean
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean();
     }
     @Data
     public final static class RespBean{
