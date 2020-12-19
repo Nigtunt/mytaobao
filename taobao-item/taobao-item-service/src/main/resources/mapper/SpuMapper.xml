@@ -7,12 +7,12 @@
     <!--size：标识缓存cache中容纳的最大元素，默认为1024。-->
     <!--readOnly：默认为false，可配置为true缓存只读。-->
     <!--xml写法-->
-    <cache type="com.yhq.config.RedisCache">
-        <property name="eviction" value="LRU" />
-        <property name="flushInterval" value="6000000" />
-        <property name="size" value="1024" />
-        <property name="readOnly" value="false" />
-    </cache>
+    <!--<cache type="com.yhq.config.RedisCache">-->
+        <!--<property name="eviction" value="LRU" />-->
+        <!--<property name="flushInterval" value="6000000" />-->
+        <!--<property name="size" value="1024" />-->
+        <!--<property name="readOnly" value="false" />-->
+    <!--</cache>-->
 
 
     <select id="selectSpu" resultType="spu">

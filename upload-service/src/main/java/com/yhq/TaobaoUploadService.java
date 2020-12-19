@@ -2,12 +2,15 @@ package com.yhq;
 
 import com.yhq.constant.Cons;
 import com.yhq.service.CangkuService;
+import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,8 +18,11 @@ import sun.misc.Cleaner;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 //import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
@@ -25,35 +31,26 @@ import java.util.Date;
  */
 @SpringBootApplication
 //@EnableEurekaClient
+@EnableScheduling
+@MapperScan("com.yhq.mapper")
+@Slf4j
 public class TaobaoUploadService {
-    public static void main(String args[]){
-        SpringApplication.run(TaobaoUploadService.class,args);
+    public static void main(String args[]) {
+        SpringApplication.run(TaobaoUploadService.class, args);
     }
 
     @Autowired
     CangkuService service;
     @Autowired
     JavaMailSender sender;
-    @Scheduled(cron = "0 0 0 * * ?")
-    public void cache(){
-        Calendar instance = Calendar.getInstance();
-        if (instance.get(Calendar.DATE) % 3 == 0) {
-            String result = service.Cache(Cons.map.get("realPath"));
-            try {
-                sendMessage(result);
-            } catch (MessagingException e) {
-                e.printStackTrace();
-            }
-        }
-        else{
-            if (instance.get(Calendar.DATE) % 10 == 0){
-                service.clearCache();
-                try {
-                    sendMessage("已清除缓存");
-                } catch (MessagingException e) {
-                    e.printStackTrace();
-                }
-            }
+
+    @Scheduled(cron = "0 0 23 * * ?")
+    public void cache() {
+        String result = service.Cache(Cons.map.get("realPath"));
+        try {
+            sendMessage(result + " time:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(System.currentTimeMillis()));
+        } catch (MessagingException e) {
+            e.printStackTrace();
         }
     }
 

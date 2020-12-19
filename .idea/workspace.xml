@@ -1,60 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cea51861-5397-4cbf-b246-0ee2a8550ca9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/config/AccessTokenConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/service/SearchInfoSenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/AccessTokenConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/AuthorizationServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/CustomAdditionalInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/dao/ClientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/ClientAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/resources/templates/mail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/test/java/test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/MyWebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/constant/Cons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/SettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/static/cacheImage/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/templates/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/templates/set.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-service/src/test/java/test2.java" afterDir="false" />
+    <list default="true" id="cea51861-5397-4cbf-b246-0ee2a8550ca9" name="Default Changelist" comment="update commit">
+      <change afterPath="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/hystrix/QueryOrderIdCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taobao-gateway-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taobao-gateway-demo/src/main/java/com/yhq/gateWay/gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taobao-gateway-demo/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/test/java/DatabaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/Myqueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/DO/DetailDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/DO/ItemDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/mapper/DetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/mapper/ItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/static/images/timg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/main/resources/static/js/echo.main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-service/src/test/java/ThreadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-interface/src/main/java/com/yhq/entity/Spu.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-interface/src/main/java/com/yhq/entity/Spu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/dao/SpuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/dao/SpuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/taobaoItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/taobaoItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/mapper/SpuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/mapper/SpuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-item/taobao-item-service/src/test/java/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/service/AddSpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/service/AddSpuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-search/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-search/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/controller/searchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/controller/searchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taobao-user-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-user-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/Filter/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/Filter/JwtFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao-user-center/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-user-center/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/UserAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/UserAuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taobao-user-center/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobao-user-center/src/test/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/TaobaoUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/TaobaoUploadService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload-service/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/main/resources/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload-service/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload-service/src/test/java/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/upload-service/src/test/java/test2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,117 +53,145 @@
     <ignored path="$PROJECT_DIR$/upload-service/target/" />
     <ignored path="$PROJECT_DIR$/taobao-search/target/" />
     <ignored path="$PROJECT_DIR$/taobao-user-center/target/" />
+    <ignored path="$PROJECT_DIR$/taobao-gateway-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1176197460">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.closed" value="85" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.36" value="3" />
-          <entry key="project.open.time.37" value="2" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.40" value="3" />
-          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.36" value="4" />
+          <entry key="project.open.time.37" value="3" />
+          <entry key="project.open.time.39" value="2" />
+          <entry key="project.open.time.40" value="4" />
+          <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.43" value="2" />
-          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.43" value="4" />
+          <entry key="project.open.time.45" value="3" />
+          <entry key="project.open.time.46" value="4" />
           <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="2" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.54" value="1" />
-          <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.55" value="4" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.6" value="9" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.72" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="48" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.open.time.84" value="1" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Dockerfile" value="134" />
+          <entry key="Dockerfile" value="137" />
+          <entry key="class" value="2" />
           <entry key="dummy" value="14" />
           <entry key="ftl" value="79" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="1123" />
-          <entry key="java" value="28844" />
+          <entry key="html" value="1218" />
+          <entry key="java" value="36388" />
           <entry key="pom" value="2" />
           <entry key="txt" value="27" />
-          <entry key="xml" value="3061" />
-          <entry key="yaml" value="1583" />
+          <entry key="xml" value="3109" />
+          <entry key="yaml" value="2295" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CLASS" value="2" />
           <entry key="FTL" value="79" />
-          <entry key="HTML" value="1123" />
-          <entry key="JAVA" value="28844" />
-          <entry key="PLAIN_TEXT" value="176" />
+          <entry key="HTML" value="1218" />
+          <entry key="JAVA" value="36388" />
+          <entry key="PLAIN_TEXT" value="179" />
           <entry key="SQL" value="49" />
-          <entry key="XML" value="3014" />
-          <entry key="YAML" value="1583" />
+          <entry key="XML" value="3062" />
+          <entry key="YAML" value="2295" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="6" />
+          <entry key="Dockerfile" value="9" />
           <entry key="MF" value="2" />
           <entry key="application" value="1" />
-          <entry key="class" value="334" />
+          <entry key="class" value="534" />
           <entry key="css" value="2" />
           <entry key="ddl" value="1" />
           <entry key="dtd" value="2" />
-          <entry key="factories" value="2" />
+          <entry key="factories" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="29" />
+          <entry key="html" value="49" />
           <entry key="iml" value="1" />
-          <entry key="java" value="718" />
-          <entry key="jpg" value="15" />
-          <entry key="js" value="1" />
-          <entry key="json" value="3" />
+          <entry key="java" value="1050" />
+          <entry key="jpg" value="16" />
+          <entry key="js" value="2" />
+          <entry key="json" value="4" />
           <entry key="png" value="1" />
-          <entry key="pom" value="21" />
-          <entry key="properties" value="2" />
+          <entry key="pom" value="25" />
+          <entry key="properties" value="4" />
           <entry key="ts" value="1" />
-          <entry key="txt" value="4" />
-          <entry key="xml" value="141" />
-          <entry key="yaml" value="59" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="176" />
+          <entry key="yaml" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="334" />
+          <entry key="CLASS" value="534" />
           <entry key="CSS" value="2" />
           <entry key="DTD" value="2" />
-          <entry key="HTML" value="29" />
+          <entry key="HTML" value="49" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="16" />
-          <entry key="JAVA" value="718" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="1" />
+          <entry key="Image" value="17" />
+          <entry key="JAVA" value="1050" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="2" />
           <entry key="Manifest" value="2" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Properties" value="2" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Properties" value="4" />
           <entry key="SQL" value="1" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="162" />
-          <entry key="YAML" value="60" />
-          <entry key="spring.factories" value="2" />
+          <entry key="XML" value="201" />
+          <entry key="YAML" value="86" />
+          <entry key="spring.factories" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages">
@@ -192,62 +206,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/ImageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/constant/Cons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="373">
+              <caret line="128" column="59" lean-forward="true" selection-start-line="128" selection-start-column="59" selection-end-line="128" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/application.yaml">
+        <entry file="file://$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -259,8 +228,9 @@
       <list>
         <option value="XML" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -278,57 +248,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/dao/ClientMapper.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/entity/Client.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/ClientAuthService.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/Filter/JwtFilter.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/AccessTokenConfig.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/CustomAdditionalInformation.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/AuthorizationServer.java" />
-        <option value="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/config/ResourceServerConfig.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/UserAuthService.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/RedisCache.java" />
-        <option value="$PROJECT_DIR$/taobao-user-center/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/taobao-api-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/dao/SpuMapper.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/mapper/SpuMapper.xml" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/test/java/test.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisCache.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-interface/src/main/java/com/yhq/entity/Spu.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/pom.xml" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RabbitMQConfig.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/service/SearchInfoSenderService.java" />
-        <option value="$PROJECT_DIR$/taobao-search/pom.xml" />
-        <option value="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/service/AddSpuService.java" />
         <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/application.yaml" />
         <option value="$PROJECT_DIR$/taobao-search/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/config/RabbitMQConfig.java" />
-        <option value="$PROJECT_DIR$/upload-service/src/test/java/test.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.ftl" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/jsController.java" />
         <option value="$PROJECT_DIR$/taobao-user-center/src/test/java/test2.java" />
-        <option value="$PROJECT_DIR$/upload-service/src/test/java/test2.java" />
-        <option value="$PROJECT_DIR$/upload-service/pom.xml" />
-        <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html" />
         <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/page.html" />
-        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java" />
-        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/TaobaoUploadService.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/MyWebConfig.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/constant/Cons.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/test.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/SettingController.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/set.html" />
-        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java" />
+        <option value="$PROJECT_DIR$/taobao-user-center/src/test/java/test.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/test/java/test.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/test/java/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/Myqueue.java" />
+        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/mapper/SpuMapper.xml" />
+        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/test/java/DatabaseTest.java" />
+        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/controller/BrandController.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/UserAuthService.java" />
+        <option value="$PROJECT_DIR$/taobao-user-center/src/test/java/test3.java" />
+        <option value="$PROJECT_DIR$/taobao-user-center/pom.xml" />
+        <option value="$PROJECT_DIR$/taobao-api-gateway/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/GateWayApplication.java" />
+        <option value="$PROJECT_DIR$/taobao-api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/taobao-gateway-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/config/RabbitMQConfig.java" />
+        <option value="$PROJECT_DIR$/taobao-search/src/main/java/com/yhq/search/controller/searchController.java" />
+        <option value="$PROJECT_DIR$/taobao-gateway-demo/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/taobao-gateway-demo/src/main/java/com/yhq/gateWay/gate.java" />
+        <option value="$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/taobaoItemService.java" />
+        <option value="$PROJECT_DIR$/taobao-api-gateway/src/main/java/com/yhq/api/hystrix/QueryOrderIdCommand.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/test/java/test2.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/Dockerfile" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/resources/static/js/echo.main.js" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/filter/AuthFilter.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/DO/DetailDO.java" />
+        <option value="$PROJECT_DIR$/upload-service/pom.xml" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/TaobaoUploadService.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/mapper/DetailMapper.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/mapper/ItemMapper.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/DO/ItemDO.java" />
         <option value="$PROJECT_DIR$/upload-service/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java" />
+        <option value="$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java" />
       </list>
     </option>
   </component>
@@ -362,13 +332,34 @@
           <item name="upload-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="upload-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.baomidou:mybatis-plus-boot-starter:3.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="upload-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.baomidou:mybatis-plus-boot-starter:3.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.baomidou:mybatis-plus:3.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="upload-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="com.baomidou:mybatis-plus-boot-starter:3.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.baomidou:mybatis-plus:3.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="com.baomidou:mybatis-plus-extension:3.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="107" />
-    <option name="y" value="187" />
+    <option name="x" value="85" />
+    <option name="y" value="10" />
     <option name="width" value="1665" />
     <option name="height" value="1005" />
   </component>
@@ -388,52 +379,34 @@
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userCenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userCenter" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao-item-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -441,21 +414,6 @@
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
               <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="taobao-user-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
               <item name="upload-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,16 +455,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yhq" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yhq" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
@@ -517,6 +465,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yhq" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yhq" type="462c0819:PsiDirectoryNode" />
+              <item name="DO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yhq" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yhq" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
@@ -543,50 +521,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="cacheImage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobao" type="462c0819:PsiDirectoryNode" />
-              <item name="upload-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="taobao" type="b2602c69:ProjectViewProjectNode" />
@@ -609,14 +544,18 @@
     <property name="SearchEverywhereHistoryKey" value="invalid_token&#9;PSI&#9;JAVA://org.springframework.security.oauth2.common.exceptions.OAuth2Exception#INVALID_TOKEN&#10;SecurityContextPersistenceFilter &#9;PSI&#9;JAVA://org.springframework.security.web.context.SecurityContextPersistenceFilter&#10;SPRING_SECURITY_CONTEXT&#9;PSI&#9;JAVA://org.springframework.security.web.context.HttpSessionSecurityContextRepository#SPRING_SECURITY_CONTEXT_KEY" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595670442212" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608369070534" />
+    <property name="last_opened_file_path" value="D:/demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\于浩强\IdeaProjects\taobao\upload-service\src\main\resources\static\images" />
       <recent name="D:\Users\于浩强\IdeaProjects\taobao\upload-service\src\main\resources\static" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -653,29 +592,9 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.21311475" />
+    <option name="contentProportion" value="0.1420765" />
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yhq.controller.test" />
-      <module name="uploadservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yhq.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test2" />
-      <module name="uploadservice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.TaobaoUploadService">
     <configuration name="test2.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uploadservice" />
       <option name="PACKAGE_NAME" value="" />
@@ -686,29 +605,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test2.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uploadservice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test2" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test2.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uploadservice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test2" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TaobaoUploadService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="uploadservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhq.TaobaoUploadService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="taobaousercenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhq.userCenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhq.userCenter.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gate" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="taobaogatewaydemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhq.gateWay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhq.gateWay.gate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="registry" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="taobaoregistry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhq.registry" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="searchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="taobaosearch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhq.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yhq.search.searchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -723,19 +674,19 @@
     <list>
       <item itemvalue="Spring Boot.TaobaoUploadService" />
       <item itemvalue="Spring Boot.taobaoItemService" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.registry" />
+      <item itemvalue="Spring Boot.searchApplication" />
+      <item itemvalue="Spring Boot.gate" />
       <item itemvalue="JUnit.test2.test2" />
-      <item itemvalue="JUnit.test2.test3" />
-      <item itemvalue="JUnit.test2.test4" />
-      <item itemvalue="Application.test2" />
-      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="JUnit.test2.test2" />
-        <item itemvalue="Application.test2" />
-        <item itemvalue="JUnit.test2.test4" />
-        <item itemvalue="JUnit.test2.test3" />
+        <item itemvalue="Spring Boot.gate" />
+        <item itemvalue="Spring Boot.searchApplication" />
+        <item itemvalue="Spring Boot.registry" />
+        <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -796,7 +747,50 @@
       <workItem from="1595394308711" duration="1053000" />
       <workItem from="1595583922662" duration="25232000" />
       <workItem from="1595644681081" duration="1399000" />
-      <workItem from="1595657770219" duration="12053000" />
+      <workItem from="1595657770219" duration="14627000" />
+      <workItem from="1595758646291" duration="504000" />
+      <workItem from="1595826884344" duration="695000" />
+      <workItem from="1595843890125" duration="746000" />
+      <workItem from="1595845691483" duration="613000" />
+      <workItem from="1596961510053" duration="8985000" />
+      <workItem from="1596977967510" duration="2680000" />
+      <workItem from="1597031690775" duration="4042000" />
+      <workItem from="1597042768314" duration="2085000" />
+      <workItem from="1597653843703" duration="5066000" />
+      <workItem from="1598077016636" duration="229000" />
+      <workItem from="1598441970187" duration="234000" />
+      <workItem from="1598496376719" duration="2912000" />
+      <workItem from="1598522162965" duration="2776000" />
+      <workItem from="1598582798580" duration="2300000" />
+      <workItem from="1598685107748" duration="4072000" />
+      <workItem from="1598840724968" duration="1745000" />
+      <workItem from="1598928739362" duration="5243000" />
+      <workItem from="1599484931857" duration="4900000" />
+      <workItem from="1599532406200" duration="2070000" />
+      <workItem from="1599539508721" duration="13600000" />
+      <workItem from="1599619658898" duration="1614000" />
+      <workItem from="1599624501387" duration="237000" />
+      <workItem from="1599719595768" duration="733000" />
+      <workItem from="1599791349569" duration="11258000" />
+      <workItem from="1599915261904" duration="2573000" />
+      <workItem from="1599965259677" duration="297000" />
+      <workItem from="1599965936097" duration="2994000" />
+      <workItem from="1603513411675" duration="5322000" />
+      <workItem from="1604057864946" duration="3198000" />
+      <workItem from="1604144953667" duration="629000" />
+      <workItem from="1605529923971" duration="1489000" />
+      <workItem from="1605790073372" duration="382000" />
+      <workItem from="1605791376404" duration="313000" />
+      <workItem from="1605792187599" duration="509000" />
+      <workItem from="1605878971253" duration="225000" />
+      <workItem from="1605880605279" duration="179000" />
+      <workItem from="1605882049996" duration="1678000" />
+      <workItem from="1605932486240" duration="31000" />
+      <workItem from="1605944119032" duration="45000" />
+      <workItem from="1605949746129" duration="683000" />
+      <workItem from="1606626854650" duration="5467000" />
+      <workItem from="1606639883636" duration="112000" />
+      <workItem from="1608357206547" duration="11118000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1594387966388</created>
@@ -819,16 +813,17 @@
       <option name="project" value="LOCAL" />
       <updated>1594388624195</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update commit">
+      <created>1595670550908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595670550908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test2_test2 - 2020.07.25 at 14h 49m 38s.xml">
-      <configuration name="test2.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test2_test2 - 2020.07.25 at 14h 52m 11s.xml">
-      <configuration name="test2.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="test2_test2 - 2020.07.25 at 14h 55m 59s.xml">
       <configuration name="test2.test2" configurationId="JUnit" />
     </history-entry>
@@ -853,16 +848,31 @@
     <history-entry file="test2_test2 - 2020.07.25 at 16h 13m 02s.xml">
       <configuration name="test2.test2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="test_test3 - 2020.07.26 at 18h 20m 13s.xml">
+      <configuration name="test.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test2_test2 - 2020.10.24 at 13h 19m 49s.xml">
+      <configuration name="test2.test2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276617000" />
+    <option name="totallyTimeSpent" value="395796000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33378017" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.30630028" />
+      <window_info id="Structure" order="1" sideWeight="0.5060241" side_tool="true" weight="0.2969169" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -871,30 +881,65 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.3134752" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39858156" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.27234042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41958043" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932975" weight="0.32907802" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.20963173" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.3134752" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28085107" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.34184396" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3248227" />
-      <window_info anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49932975" weight="0.2851064" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932975" weight="0.3177305" />
+      <window_info anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49865952" visible="true" weight="0.2751773" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.23229462" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.26340482" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.2627346" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4939759" visible="true" weight="0.30495977" />
+      <window_info id="Structure" order="1" sideWeight="0.5060241" side_tool="true" weight="0.2969169" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.27234042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41958043" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932975" weight="0.32907802" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28085107" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.34184396" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932975" weight="0.3177305" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="13" sideWeight="0.49865952" visible="true" weight="0.4539007" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.23229462" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.2627346" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -941,22 +986,84 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/java/com/yhq/config/RedisCache.java</url>
-          <line>66</line>
+          <url>file://$PROJECT_DIR$/upload-service/src/test/java/ThreadTest.java</url>
+          <line>39</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java</url>
-          <line>47</line>
+          <url>file://$PROJECT_DIR$/taobao-user-center/src/main/java/Myqueue.java</url>
+          <line>64</line>
           <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/ImageController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/UploadService.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/UploadService.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/taobao-gateway-demo/src/main/java/com/yhq/gateWay/gate.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/taobao-gateway-demo/src/main/java/com/yhq/gateWay/gate.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/jdk1.8.0_181/src.zip!/java/util/HashMap.java</url>
+          <line>755</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>531</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((DefaultListableBeanFactory)beanFactory).beanDefinitionNames" custom="org.springframework.beans.factory.support.DefaultListableBeanFactory" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>result instanceof String</expression-string>
         <language-id>JAVA</language-id>
@@ -997,380 +1104,455 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>search.getHits().getHits()[0].getSourceAsString();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/Future.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE.jar!/org/springframework/boot/context/logging/LoggingApplicationListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="150" column="6" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
+        <state relative-caret-position="35">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/cache.txt">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.4.RELEASE/spring-security-web-5.2.4.RELEASE.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="931" selection-start-column="931" selection-end-column="931" />
+        <state relative-caret-position="286">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/freemarker/FreeMarkerAutoConfiguration.class">
+    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/Filter/JwtFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="137">
+          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/freemarker/FreeMarkerProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/static/images/bg-01.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/com/yhq/controller/CangKuController.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/com/yhq/controller/SettingController.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/com/yhq/controller/test.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/org/jsoup/Connection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="123" column="15" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/org/jsoup/helper/HttpConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="589" column="54" selection-start-line="589" selection-start-column="54" selection-end-line="589" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/org/jsoup/helper/Validate.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.4.RELEASE/spring-security-config-5.2.4.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <caret line="149" column="46" selection-start-line="149" selection-start-column="46" selection-end-line="149" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/org/jsoup/helper/DataUtil.class">
+    <entry file="jar://D:/jdk1.8.0_181/src.zip!/java/util/concurrent/TimeUnit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="139" column="32" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
+        <state relative-caret-position="-2714">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/org/jsoup/internal/ConstrainableInputStream.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.4.RELEASE/spring-security-config-5.2.4.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        <state relative-caret-position="-329">
+          <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/InputStream.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.4.RELEASE/spring-security-config-5.2.4.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/RememberMeConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="160" column="15" selection-start-line="160" selection-start-column="15" selection-end-line="160" selection-end-column="15" />
+        <state relative-caret-position="201">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FilterInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="101" column="47" lean-forward="true" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/PTcBM.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/wLl2q.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/182430/p2400201631.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/182430/cache.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/UploadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-949">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="40" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE.jar!/org/springframework/scheduling/annotation/Scheduled.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="734" column="15" selection-start-line="734" selection-start-column="15" selection-end-line="734" selection-end-column="15" />
-          <folding>
-            <element signature="e#31971#31972#0" expanded="true" />
-            <element signature="e#32021#32022#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/test/java/test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobao-user-center/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.4.RELEASE/spring-security-web-5.2.4.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/TokenBasedRememberMeServices.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <caret line="79" column="55" lean-forward="true" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/main/resources/application.yaml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.4.RELEASE/spring-security-web-5.2.4.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/AbstractRememberMeServices.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="394">
+          <caret line="294" column="25" lean-forward="true" selection-start-line="294" selection-start-column="25" selection-end-line="294" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/test/java/test.java">
+    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/service/UserAuthService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="112">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.2.6.RELEASE/spring-context-support-5.2.6.RELEASE.jar!/org/springframework/mail/javamail/MimeMessageHelper.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.4.RELEASE/spring-security-core-5.2.4.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="422" column="16" selection-start-line="422" selection-start-column="16" selection-end-line="422" selection-end-column="16" />
+        <state relative-caret-position="112">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/w9SyO.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/test.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.4.RELEASE/spring-security-core-5.2.4.RELEASE.jar!/org/springframework/security/provisioning/InMemoryUserDetailsManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="2604">
+          <caret line="119" column="23" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/page.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/target/classes/static/cacheImage/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="1206" column="29" selection-start-line="1206" selection-start-column="29" selection-end-line="1206" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/test/java/test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1454">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="226">
+          <caret line="51" column="64" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/TaobaoUploadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.6.RELEASE/spring-webmvc-5.2.6.RELEASE.jar!/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/MyWebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/set.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/dao/ClientMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="280">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao-user-center/src/main/java/com/yhq/userCenter/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/SettingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java">
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/FastClientImporter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/jsController.java">
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/MyWebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/ImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/constant/Cons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="2044">
+          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/config/RespBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.4/mybatis-spring-2.0.4.jar!/org/mybatis/spring/annotation/MapperScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/mapper/DetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/mapper/ItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="218" column="33" lean-forward="true" selection-start-line="218" selection-start-column="33" selection-end-line="218" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12-sources.jar!/lombok/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_181/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_181/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.2/mybatis-plus-core-3.3.2.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.3.2/mybatis-plus-core-3.3.2.jar!/com/baomidou/mybatisplus/core/conditions/query/QueryWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/DO/DetailDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/TaobaoUploadService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/DO/ItemDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/resources/templates/bh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2-sources.jar!/org/jsoup/select/Elements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2-sources.jar!/org/jsoup/nodes/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="1426" column="34" lean-forward="true" selection-start-line="1426" selection-start-column="34" selection-end-line="1426" selection-end-column="34" />
+          <folding>
+            <element signature="e#51188#51189#0" expanded="true" />
+            <element signature="e#51234#51235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2-sources.jar!/org/jsoup/nodes/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="645" column="16" selection-start-line="645" selection-start-column="16" selection-end-line="645" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/controller/CangKuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_181/src.zip!/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="235" column="18" selection-start-line="235" selection-start-column="18" selection-end-line="235" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_181/src.zip!/java/util/concurrent/Future.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="150" column="6" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_181/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="215" column="51" selection-start-line="215" selection-start-column="51" selection-end-line="215" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-service/src/main/java/com/yhq/service/CangkuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="128" column="59" lean-forward="true" selection-start-line="128" selection-start-column="59" selection-end-line="128" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taobao-item/taobao-item-service/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>taobao</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

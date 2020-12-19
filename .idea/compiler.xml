@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="taobaoapigateway" />
         <module name="taobaocommon" />
+        <module name="taobaogatewaydemo" />
         <module name="taobaoiteminterface" />
         <module name="taobaoitemservice" />
         <module name="taobaoregistry" />

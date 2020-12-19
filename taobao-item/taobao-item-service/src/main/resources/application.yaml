@@ -2,13 +2,12 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://localhost:3306/yun
-    username: root
-    password: root
     hikari:
-      maximum-pool-size: 30
-      minimum-idle: 10
-    driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/yun?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
+    url: jdbc:mysql://localhost:3306/yun?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
   redis:
     host: 123.56.106.111
     port: 39222

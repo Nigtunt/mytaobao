@@ -8,6 +8,14 @@
             width: 500px;
         }
     </style>
+    <script src="/js/echo.main.js"></script>
+
+    <script>
+        echo.init({
+            offset: 0,//离可视区域多少像素的图片可以被加载
+            throttle: 0 //图片延时多少毫秒加载
+        });
+    </script>
 </head>
 <body>
 <#if error??>
@@ -15,7 +23,7 @@
 <#else>
         <#list ims as im>
             <div>
-                <img src="${im.thumb}">
+                <img src="/images/timg.gif" data-echo="${im.thumb}">
                 <p>${im.title}</p>
                 <a href="/cangku/item/${im.id}">click</a>
             </div>

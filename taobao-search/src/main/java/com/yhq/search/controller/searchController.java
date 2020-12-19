@@ -29,4 +29,9 @@ public class searchController {
     public String search(String key) throws IOException {
         return new ObjectMapper().writeValueAsString(searchingService.search(key,0,0));
     }
+
+    @GetMapping("test")
+    public String test(){
+        return "test";
+    }
 }

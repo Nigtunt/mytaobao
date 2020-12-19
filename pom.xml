@@ -12,6 +12,7 @@
         <module>upload-service</module>
         <module>taobao-search</module>
         <module>taobao-user-center</module>
+        <module>taobao-gateway-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

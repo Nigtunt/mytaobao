@@ -58,8 +58,6 @@ public class BrandController {
         Long[] cids,
         String mode
     ){
-        System.out.println(brand);
-        System.out.println(Arrays.deepToString(cids));
         if (mode.equals("add")){
             brandService.addBrand(brand , cids);
             return new ResponseEntity<>(HttpStatus.CREATED);

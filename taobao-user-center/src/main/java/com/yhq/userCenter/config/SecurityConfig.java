@@ -82,8 +82,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .permitAll()
                 .anyRequest().authenticated()
                 .and()
-//                .addFilterBefore(new JwtLoginFilter("/login",authenticationManager())
-//                        , UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(new JwtLoginFilter("/login",authenticationManager())
+                        , UsernamePasswordAuthenticationFilter.class)
 //                .addFilterBefore(new JwtFilter(), UsernamePasswordAuthenticationFilter.class)
                 .csrf().disable().exceptionHandling()
                 // 权限不足是触发

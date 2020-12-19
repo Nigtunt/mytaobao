@@ -1,6 +1,8 @@
 package com.yhq.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.yhq.filter.AuthFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -11,11 +13,16 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 
 import javax.servlet.ServletException;
@@ -23,6 +30,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: YHQ
@@ -35,6 +43,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
+    @Autowired
+    InMemoryUserDetailsManager inMemoryUserDetailsManager;
+
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().mvcMatchers("/css/**","/js/**","/fonts/**","/images/**");
@@ -45,9 +56,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .anyRequest().authenticated()
                 .and()
+//                .addFilterBefore(new AuthFilter(), UsernamePasswordAuthenticationFilter.class)
                 .formLogin()
                 .loginProcessingUrl("/doLogin")
-                .successForwardUrl("/")
+                .defaultSuccessUrl("/")
 //                .successHandler(new AuthenticationSuccessHandler() {
 //                    @Override
 //                    public void onAuthenticationSuccess(HttpServletRequest req, HttpServletResponse resp, Authentication authentication) throws IOException, ServletException {
@@ -86,6 +98,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         out.close();
                     }
                 })
-                .permitAll();
+                .permitAll()
+                .and()
+                .rememberMe()
+                .alwaysRemember(true)
+                .userDetailsService(inMemoryUserDetailsManager)
+                .tokenValiditySeconds(((int) TimeUnit.DAYS.toSeconds(30)));
     }
 }

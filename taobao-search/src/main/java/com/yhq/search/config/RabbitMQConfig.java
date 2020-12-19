@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
  * @Author: YHQ
  * @Date: 2020/7/20 11:59
  */
-@Configuration
+//@Configuration
 public class RabbitMQConfig {
     @Bean
     Queue queue(){

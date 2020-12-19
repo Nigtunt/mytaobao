@@ -19,9 +19,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.SocketTimeoutException;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Author: YHQ
@@ -49,8 +47,17 @@ public class test2 {
 
     @Test
     public void test2() throws JSONException {
+        List<String > ids = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 100; i++) {
+            ids.add(String.valueOf(i));
+        }
 
+        for (String id : ids) {
+            sb.append(id).append(",");
+        }
 
+        System.out.println(sb.substring(0,sb.length()-1));
     }
 
     @Test

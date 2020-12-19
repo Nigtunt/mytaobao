@@ -7,7 +7,7 @@
 
     <title>Title</title>
     <script src="https://lib.baomitu.com/vue/2.6.11/vue.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0/axios.min.js"></script>
 </head>
 <body>
 <div id="app">
@@ -39,7 +39,7 @@
                 data.append('file', file);
                 axios.post('/upload/image', data, {
                     headers: {
-                        'Content-Type': 'multipart/form-data',
+                       'Content-Type': 'multipart/form-data',
                         'X-CSRF-TOKEN': token
                     },
                 }).then(res => {

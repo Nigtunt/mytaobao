@@ -5,14 +5,15 @@ import com.yhq.userCenter.dao.UserMapper;
 import com.yhq.userCenter.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Author: YHQ
@@ -34,6 +35,7 @@ public class UserAuthService implements UserDetailsService {
         authList.add(new SimpleGrantedAuthority("ROLE_user"));
         UserDetails userDetail = new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), authList);
 //        System.out.println(userDetail);
+        List<String> strings = Collections.singletonList("");
         return userDetail;
     }
 }

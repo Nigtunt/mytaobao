@@ -1,0 +1,49 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: search-service
+          uri: lb://search-service
+          predicates:
+          - Path=/search-service/**
+        - id: item-service
+          uri: lb://item-service
+          predicates:
+          - Path=/item-service/**
+        - id: upload-service
+          uri: lb://upload-service
+          filter:
+            - StripPrefix=2 # 代表截取的路径个数  比如 /name/foo/hello  截取/name/foo
+            - PrefixPath=/mypath   # 代表之前会加 /mypath
+            # 限流器  使用 spring-boot-starter-data-redis-reactive
+#            - name: RequestRateLimiter
+#                args:
+#                  redis-rate-limiter.replenishRate: 10  允许用户每秒处理多少个请求
+#                  redis-rate-limiter.burstCapacity: 20  令牌桶的容量，允许在一秒钟内完成的最大请求数
+#                  key-resolver: "#{@userKeyResolver}"    使用 SpEL 按名称引用 bean
+#      @Bean
+#      KeyResolver userKeyResolver() {
+          # 根据ip限流
+#         return exchange -> Mono.just(exchange.getRequest().getRemoteAddress().getHostName());
+#      }
+
+
+
+          # 熔断器
+#            - name: Hystrix
+      #          args:
+    #            name: fallbackcmd
+    #            fallbackUri: forward:/incaseoffailureusethis
+          predicates:   # 断言，指示匹配的路径和一些规则，比如Host，Method，Query，Header，Cookie
+           - Path=/upload-service/**
+
+eureka:
+  client:
+    service-url:
+      'defaultZone': http://localhost:10000/eureka/
+    registry-fetch-interval-seconds: 5
+

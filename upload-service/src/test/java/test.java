@@ -7,12 +7,17 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.Date;
 
 /**
  * @Author: YHQ
@@ -54,6 +59,21 @@ public class test {
         String path = thumbImageConfig.getThumbImagePath(storePath.getPath());
         System.out.println(path);
     }
+    @Autowired
+    JavaMailSender sender;
+    @Test
+    public void test3() throws MessagingException {
+        sendMessage("123");
+    }
 
-
+    public void sendMessage(String str) throws MessagingException {
+        MimeMessage message = sender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message);
+        helper.setFrom("915540781@qq.com");
+        helper.setTo("915540781@qq.com");
+        helper.setSubject("缓存通知");
+        helper.setSentDate(new Date());
+        helper.setText(str);
+        sender.send(message);
+    }
 }
