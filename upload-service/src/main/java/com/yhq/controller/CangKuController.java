@@ -1,5 +1,6 @@
 package com.yhq.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yhq.DO.DetailDO;
 import com.yhq.DO.ItemDO;
@@ -47,7 +48,7 @@ public class CangKuController {
 
     @RequestMapping("bh")
     public String bh(ModelMap model) {
-        List<ItemDO> itemDOS = itemMapper.selectList(null);
+        List<ItemDO> itemDOS = itemMapper.selectList(new QueryWrapper<ItemDO>().orderByDesc("detail_id"));
 
         if (itemDOS==null||itemDOS.size()==0){
             model.addAttribute("error","错误，未进行缓存或者无最新更新");
